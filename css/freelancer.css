@@ -9,7 +9,64 @@ img.main-logo {
     margin-top: -10px;
 }
 
+nav#mainNav {
+    box-shadow:  0 5px 10px rgba(0,0,0,0.3);
+}
 
+.box-slogan {
+    padding: 100px 0;
+}
+
+header.masthead {
+    margin-top:  110px;
+    margin-bottom: 50px;
+    padding: 0 !important;
+}
+
+h2#slogan {
+    font-family: Oswald;
+    font-size: 6em;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #ffdf44;
+}
+
+h2#slogan:before {
+    content: "4 marzo 2018 / elezioni politiche";
+    display: block;
+    font-family: Lato;
+    font-weight: 800;
+    font-size: 21px;
+    letter-spacing: 6px;
+}
+
+header .container {
+    text-align: left;
+    padding:50px 0;
+}
+header .container img {
+    float:left;
+    margin-top:-100px;
+    margin-right:50px !important;
+    padding:10px;
+    background: white;
+    box-shadow: 0 -10px 10px rgba(0,0,0,0.5);
+    border-radius: 50%;
+}
+
+section#why {
+    background: #ef1c24;
+    color: white !important;
+}
+
+section#why h2 {
+    color: #ffdf44 !important;
+}
+
+.col2{
+    columns:2;
+    -webkit-columns:2;
+}
 /*----------------------------------------------original-------------------------------------------*/
 
 body {
@@ -22,11 +79,14 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Oswald';
+  font-family: 'Oswald' !important;
 }
 
 h1{font-weight:800;}
-h2{font-weight:300;}
+h2{
+    font-size:4em;
+    font-weight:500;
+}
 
 hr.star-light,
 hr.star-dark {
