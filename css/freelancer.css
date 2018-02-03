@@ -1,3 +1,17 @@
+img.main-logo {
+    float: left;
+    border-radius: 50%;
+    padding: 5px;
+    background: white;
+    margin-right: 20px;
+    margin-bottom: -80px;
+    box-shadow: 0 7px 5px rgba(0,0,0,0.3);
+    margin-top: -10px;
+}
+
+
+/*----------------------------------------------original-------------------------------------------*/
+
 body {
   font-family: 'Lato';
 }
@@ -8,9 +22,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 700;
-  font-family: 'Montserrat';
+  font-family: 'Oswald';
 }
+
+h1{font-weight:800;}
+h2{font-weight:300;}
 
 hr.star-light,
 hr.star-dark {
@@ -102,7 +118,7 @@ section h2 {
 }
 
 #mainNav .navbar-brand {
-  color: #fff;
+  color: black;
 }
 
 #mainNav .navbar-nav {
@@ -111,7 +127,9 @@ section h2 {
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link {
-  color: #fff;
+  color: black;
+  font-weight:200;
+  font-family:Oswald;
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
@@ -348,7 +366,7 @@ a:focus, a:hover, a:active {
 }
 
 .bg-secondary {
-  background-color: #2C3E50 !important;
+  background-color: white !important;
 }
 
 .text-primary {
