@@ -3,7 +3,8 @@
 function initPage() {
     $("#candidato_nome").text(candidato_nome);
     $("#bio_short").attr('w3-include-html',bio_short_url);
-    
+    $("#bio_long_text").attr('w3-include-html',bio_long_url);
+    show_issues(issues_url);
     
 //    //recupero il captcha
 //    $.post("../backend/get_captcha.php",
@@ -15,3 +16,9 @@ function initPage() {
 //            $("#captcha_hidden_val").html("<input id=\"captcha_id\" type=\"hidden\" name=\"k_captcha\" value="+ data.data.id + ">");
 //        });	
 };	
+
+function show_issues(issues_url){
+    $("#my_issues").attr('w3-include-html',issues_url); 
+    
+    
+}
