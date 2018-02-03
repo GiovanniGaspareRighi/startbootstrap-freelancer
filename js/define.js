@@ -16,5 +16,5 @@ var issues_url = "docs/my_issues.html";
 var why = "";
 
 // Viva Paremetri
-
-var id_donation = 4;
+var donation_id = 4;
+var group_id = 422;
