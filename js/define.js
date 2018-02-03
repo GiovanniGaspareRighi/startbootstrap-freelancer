@@ -18,3 +18,7 @@ var why = "";
 // Viva Paremetri
 var donation_id = 4;
 var group_id = 422;
+
+
+// Viva Link
+var donation_url = "https://viva.possibile.com/backoffice/user_frm_donation.php?id_crowdfunding="+ donation_id;
