@@ -5,6 +5,7 @@ function initPage() {
     $("#bio_short").attr('w3-include-html',bio_short_url);
     $("#bio_long_text").attr('w3-include-html',bio_long_url);
     show_issues(issues_url);
+    show_social();
     load_captcha();
     load_privacy();
     
@@ -46,5 +47,54 @@ function load_privacy() {
     function(data,status){
         $("#privacy_text").text(data.data.text);
     });	
+    
+}
+
+//facciamo vedere i social
+function show_social() {
+    
+    var social_link = {
+        facebook : {
+            nome : "facebook_link_id",
+            link : facebook_link,
+            icon : "fa-facebook"
+        },
+        twitter : {
+            nome : "twitter_link_id",
+            link : twitter_link,
+            icon : "fa-twitter"
+        },
+        linkedin : {
+            nome : "linkedin_link_id",
+            link : linkedin_link,
+            icon : "fa-linkedin"
+        },
+        wordpress : {
+            nome : "wordpress_link_id",
+            link : wordpress_link,
+            icon : "fa-wordpress"
+        },
+        youtube : {
+            nome : "youtube_link_id",
+            link : youtube_link,
+            icon : "fa-youtube"
+        }
+        
+    };
+    
+    var x;
+    var social_html = "";
+    for (x in social_link){
+        if (social_link[x].link !== ""){
+            social_html +=  "<li class='list-inline-item'>";
+            social_html +=  "<a class='btn btn-outline-light btn-social text-center rounded-circle' href='" + social_link[x].link + "'>";
+            social_html +=  "<i class='fa fa-fw " + social_link[x].icon  +  "'></i>";
+            social_html +=  "</a> </li>";
+        }
+        
+    }
+    
+    $("#social-link").html(social_html);
+    //console.log(social_html);
     
 }

@@ -4,7 +4,10 @@
 var candidato_nome = "Eulalia Grillo";
 var candidato_img_url = "/img/profile.png";
 var facebook_link = "https://www.facebook.com/Eulalia-Grillo-159125864736835/";
-var twitter_link = "";
+var twitter_link = "dewqeqweq";
+var linkedin_link = "";
+var wordpress_link = ""; //link alla pagina autore di Possibile o altro sito personale
+var youtube_link = "https://www.youtube.com/channel/UC6Bb0C_Ixcc-FS52Y0VBCqQ"; 
 
 // utility: https://word2cleanhtml.com
 // 
