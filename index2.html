@@ -172,6 +172,12 @@
             <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
             <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
             <form name="sentMessage" id="contactForm" novalidate="novalidate">
+              	<!-- Viva Parametri -->
+            	<input id="id_poll" type="hidden" name="k_poll" value="3">
+	  			<input id="id_contact_ratio" type="hidden" name="k_contact_ratio" value="1">
+	 			<div id="captcha_hidden_val"></div>
+                                <div id="session_token_hidden_val"></div>
+              
               <div class="control-group">
                 <div class="form-group floating-label-form-group controls mb-0 pb-2">
                   <label>Nome</label>
@@ -209,16 +215,31 @@
               </div>
               <br>
               <div class="control-group">
-                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                  <label></label>
-                  <input class="form-control" id="privacy" type="checkbox" required="required" data-validation-required-message="Accettare i termini della privacy è obbligatorio">
-                  Accetto la <a href="#">privacy</a>
-                  <p class="help-block text-danger"></p>
-                </div>
+				<div class="inputGroupContainer">
+					<div class="row">
+						 <div class="col-sm-6 col-xs-4 controls mb-0 pb-2">
+						   <input  id="privacy" type="checkbox" required="required" data-validation-required-message="Accettare i termini della privacy è obbligatorio">
+						   Accetto la <a class="portfolio-item" href="#privacy_modal">privacy</a>
+						   
+						 </div>
+                		 <div class="col-sm-6 col-xs-4  controls mb-0 pb-2">
+                		 	<label>Captcha 
+                		 	<img id="waForm_captcha_img_captcha">
+                		 	</label>
+							 <input type="text" name="captcha" class="form-control" placeholder="Captcha" id="captcha_value" required="required" data-validation-required-message="Captcha obbligatorio">
+								 
+						 </div>
+						<p class="help-block text-danger"></p>
+					</div>	
+				</div>
+                
+                
+                
+                
               </div>
               <div id="success"></div>
               <div class="form-group">
-                <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Send</button>
+                <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Invia</button>
               </div>
             </form>
           </div>
@@ -303,6 +324,28 @@
               <img class="img-fluid mb-5" src="img/profile.png" alt="">
               <div class="mb-5" id="bio_long_text">
               </div>
+              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i>
+                Chiudi</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Privacy Modal -->
+    <div class="portfolio-modal mfp-hide" id="privacy_modal">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-secondary text-uppercase mb-0">Privacy</h2>
+              <hr class="star-dark mb-5">
+              <pre style="white-space: pre-wrap;" class="mb-5" id="privacy_text">
+              </pre>
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                 <i class="fa fa-close"></i>
                 Chiudi</a>
@@ -459,6 +502,12 @@
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/viva_contact_me.js"></script>
 
+    <!-- Google Maps -->
+    <script type='text/javascript' src='//maps.googleapis.com/maps/api/js?libraries=geometry,places&language=it-IT&key=AIzaSyBfRerJTLX_zNqASzbRVuB2KJd7Cd_7H8A'></script>
+	
+    <!-- Viva Backend JavaScript -->
+    <script src="js/vivaBackend.js"></script>
+    
     <!-- Custom scripts for this template -->
     <script src="js/freelancer.min.js"></script>
     
