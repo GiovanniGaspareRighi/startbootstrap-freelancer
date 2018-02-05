@@ -2,6 +2,8 @@
 
 
 var candidato_nome = "Eulalia Grillo";
+var ruolo = "circoscrizione di Bologna";
+var slogan = "Per i molti non per i pochi";
 var candidato_img_url = "/img/profile.png";
 var facebook_link = "https://www.facebook.com/Eulalia-Grillo-159125864736835/";
 var twitter_link = "dewqeqweq";

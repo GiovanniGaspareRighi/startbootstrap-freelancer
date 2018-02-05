@@ -1,7 +1,9 @@
 // Inizializza la pagina
 
 function initPage() {
-    $("#candidato_nome").text(candidato_nome);
+    $(".nome_candidato").text(candidato_nome);
+    $("#ruolo").text(ruolo);
+    $("#slogan").text(slogan);
     $("#bio_short").attr('w3-include-html',bio_short_url);
     $("#bio_long_text").attr('w3-include-html',bio_long_url);
     show_issues(issues_url);
@@ -87,7 +89,7 @@ function show_social() {
     for (x in social_link){
         if (social_link[x].link !== ""){
             social_html +=  "<li class='list-inline-item'>";
-            social_html +=  "<a class='btn btn-outline-light btn-social text-center rounded-circle' href='" + social_link[x].link + "'>";
+            social_html +=  "<a class='btn btn-outline-dark btn-social text-center rounded-circle' href='" + social_link[x].link + "'>";
             social_html +=  "<i class='fa fa-fw " + social_link[x].icon  +  "'></i>";
             social_html +=  "</a> </li>";
         }

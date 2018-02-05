@@ -13,6 +13,26 @@ nav#mainNav {
     box-shadow:  0 5px 10px rgba(0,0,0,0.3);
 }
 
+.nav-link:after {
+    content: "";
+    height: 3px;
+    width: 100%;
+    display: block;
+    background: red;
+    transition: .3s;
+    margin-top: 10px;
+    transform: scale(0);
+}
+
+.nav-link:hover:after {
+    transform: scale(1);
+    background:#ccc;
+}
+
+.nav-link.active:after {
+    transform: scale(1);
+}
+
 .box-slogan {
     padding: 100px 0;
 }
@@ -54,19 +74,86 @@ header .container img {
     border-radius: 50%;
 }
 
+.masthead .nome_candidato {
+    font-size: 50px;
+    float: left;
+    margin-right: 20px;
+}
+
+.social-info {margin-bottom: 10px;display: inline-block;}
+
+h3#ruolo {
+    display: block;
+    margin-top: 10px;
+}
+
 section#why {
     background: #ef1c24;
     color: white !important;
 }
 
 section#why h2 {
-    color: #ffdf44 !important;
+    color: white !important;
 }
 
 .col2{
     columns:2;
     -webkit-columns:2;
 }
+
+section.light h2:after {
+    content: "";
+    height: 5px;
+    width: 250px;
+    margin: 50px auto;
+    display: block;
+    background: white;
+    text-align: center;
+}
+
+section.dark h2:after {
+    content: "";
+    height: 5px;
+    width: 250px;
+    margin: 50px auto;
+    display: block;
+    background: #2C3E50;
+    text-align: center;
+}
+
+/*----------------------------------------------------il programma-----------------------------------*/
+.panel.panel-default {
+    text-align: center;
+}
+
+.panel-title {
+    font-size: 40px;
+    font-weight: 200;
+    /* text-decoration: underline; */
+    transition: .3s;
+}
+
+.panel-collapse {
+    background: #f2f2f2;
+    padding: 30px;
+    margin: 40px 0;
+    position: relative;
+    box-shadow: 0 1px 1px #ccc;
+}
+
+.panel-collapse:before {
+    content: "";
+    height: 50px;
+    width: 50px;
+    background: #f2f2f2;
+    display: block;
+    position:  absolute;
+    top: -25px;
+    transform:  rotate(45deg);
+    left: calc(50% - 25px);
+}
+
+
 /*----------------------------------------------original-------------------------------------------*/
 
 body {
@@ -191,7 +278,7 @@ section h2 {
   font-weight:200;
   font-family:Oswald;
 }
-
+/*
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
   color: #18BC9C;
 }
@@ -203,7 +290,7 @@ section h2 {
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
   color: #18BC9C;
 }
-
+*/
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.8rem;
@@ -226,14 +313,14 @@ section h2 {
   #mainNav .navbar-nav {
     margin-top: 0;
   }
-  #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
+  /*#mainNav .navbar-nav > li.nav-item > a.nav-link.active {
     color: #fff;
     background: #18BC9C;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
     color: #fff;
     background: #18BC9C;
-  }
+  }*/
   #mainNav.navbar-shrink {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
