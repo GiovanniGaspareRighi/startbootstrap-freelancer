@@ -8,6 +8,16 @@ function initPage() {
     $("#bio_long_text").attr('w3-include-html',bio_long_url);
     show_issues(issues_url);
     show_social();
+    
+    var location_markers = show_calendar();
+    
+    new Maplace({
+        generate_controls : false,
+        locations: location_markers,
+        map_div: '#map',
+        controls_on_map: false
+    }).Load();
+    
     load_captcha();
     load_privacy();
     
@@ -99,4 +109,46 @@ function show_social() {
     $("#social-link").html(social_html);
     //console.log(social_html);
     
+}
+
+// carica la tabella degli eventi
+function show_calendar(){
+    var x;
+    var location_markers = [];
+    
+    for (x in markers){
+        var row_html = "";
+        row_html += "<tr><td><div class='calendar-day'>11</div><div class='calendar-month'>FEB</div></td>";
+        row_html += "<td><div class='calendar-event-name'>"+ markers[x].name +"</div>";
+        row_html += "<div class='calendar-event-city'>"+ markers[x].city + " - " + markers[x].province +"</div></td></tr>";
+        $("#myTable").append(row_html);
+        var new_location = {
+            lat: markers[x].lat,
+            lon: markers[x].lng,
+            title: markers[x].name,
+            html: [
+                "<a href='",viva_url+"backoffice/user_frm_happening.php?id="+markers[x].id,"' target='_blank' >",
+                '<h3>'+markers[x].name+'</h3>',
+                '<p>'+markers[x].venue_name+'</p></a>'
+                ].join('')
+        };
+        location_markers.push(new_location);
+        
+    }
+    
+    // console.log(JSON.stringify(location_markers));
+    
+    
+    $('#myTable').pageMe({
+          pagerSelector:'#myPager',
+          activeColor: 'red',
+          prevText:'Prev',
+          nextText:'Next',
+          showPrevNext:true,
+          hidePageNumbers:false,
+          perPage:2
+        });
+    
+    
+    return location_markers;
 }
