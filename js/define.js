@@ -39,6 +39,8 @@ var markers = [
         lng:11.259412,
         id_type:'3',
         type:'',
+        day: '11',
+        month: 'feb',
         name:'Controvoglia',
         url_facebook:'',
         venue_name:'posto in mezzo alla campagna',
