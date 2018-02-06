@@ -4,6 +4,7 @@ function initPage() {
     $(".nome_candidato").text(candidato_nome);
     $("#ruolo").text(ruolo);
     $("#slogan").text(slogan);
+    $("#motivazioni").attr('w3-include-html',why_url);
     $("#bio_short").attr('w3-include-html',bio_short_url);
     $("#bio_long_text").attr('w3-include-html',bio_long_url);
     $(".box-profile").css('background-image','url("' + candidato_img_url + '")');
@@ -120,8 +121,8 @@ function show_calendar(){
     for (x in markers){
         var row_html = "";
         row_html += "<tr><td><div class='calendar-day'>11</div><div class='calendar-month'>FEB</div></td>";
-        row_html += "<td><div class='calendar-event-name'>"+ markers[x].name +"</div>";
-        row_html += "<div class='calendar-event-city'>"+ markers[x].city + " - " + markers[x].province +"</div></td></tr>";
+        row_html += "<td><a href='#' target='_blank' class='calendar-event-name'>"+ markers[x].name +"</a>";
+        row_html += "<div class='calendar-event-city'>"+ markers[x].venue_name + " - " + markers[x].city +"</div></td></tr>";
         $("#myTable").append(row_html);
         var new_location = {
             lat: markers[x].lat,

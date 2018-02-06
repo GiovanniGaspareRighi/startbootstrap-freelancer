@@ -2,6 +2,18 @@
     text-align:left;
 }
 
+a{transition:.3s;}
+
+.donation-link{
+    text-transform:uppercase;
+    font-weight:800;
+    letter-spacing:4px;
+}
+
+nav .donation-link{
+    font-size:11px;
+}
+
 img.main-logo {
     float: left;
     border-radius: 50%;
@@ -169,6 +181,23 @@ section.dark h2:after {
     left: calc(50% - 25px);
 }
 
+a.extern-link {
+    padding: 20px;
+    background: #ef1c24;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 900;
+    text-decoration: none;
+    border-radius: 4px;
+    box-shadow:  0 1px 1px black;
+}
+
+a.extern-link:hover {
+    background: #616161;
+    color:white;
+}
+
 /*---------------------------------------------------Agenda----------------------------------------------*/
 section#calendar {
     padding:  0;
@@ -256,6 +285,26 @@ li.waves-effect.active {
 
 a.prev_link:before {
     content: "< PREV";
+}
+
+.calendar-event-name {
+    font-family:  Oswald;
+    font-size: 20px;
+}
+
+.calendar-event-city {
+    color: #616161;
+    font-style: italic;
+}
+
+.calendar-day {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.calendar-month {
+    margin-top:  -10px;
+    font-weight: 800;
 }
 
 /*-----------------------------------------------------contatti---------------------------------------*/

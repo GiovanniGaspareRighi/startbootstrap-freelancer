@@ -15,6 +15,7 @@ var youtube_link = "https://www.youtube.com/channel/UC6Bb0C_Ixcc-FS52Y0VBCqQ";
 // 
 var bio_short_url = "docs/bio_short.html";
 var bio_long_url = "docs/bio_long.html";
+var why_url = "docs/why.html";
 
 var issues_url = "docs/my_issues.html";
 
