@@ -19,46 +19,38 @@ Prima di iniziare a pensare a come installare il sito web, per il quale puoi sem
 * una raccolta fondi
 
 
-## Preview
+## Scarica e installa sul server web
 
-[![Freelancer Preview](https://startbootstrap.com/assets/img/templates/freelancer.jpg)](https://blackrockdigital.github.io/startbootstrap-freelancer/)
+Per usare questo template, semplicemnte scarica i file nella cartella, procedi alla personalizziazione dei paramtri, come spigato nel paragrafo successivo e caca il tutto nella cartella web del tuoi dominio. 
+Se hai bisogno di aiuto a copletare questi passaggi non esitare a contattare [ufficiotecnico@possibile.com](mailto:ufficiotecnico@possibile.com).
+Consiglimo di acquista un dominio su [Tophost](https://www.tophost.it) con il pacchetto [Topname](https://www.tophost.it/home/acquista-dominio-economico/) da 5,99€.
 
-**[View Live Preview](https://blackrockdigital.github.io/startbootstrap-freelancer/)**
+La pagina web non ha bisongo di un databese, di appoggia a Viva per recuperare le informazioni. Mentre i testi andranno modificati solo unatantum la prima volta. 
 
-## Status
+## Personalizzazione
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-freelancer/master/LICENSE)
-[![npm version](https://img.shields.io/npm/v/startbootstrap-freelancer.svg)](https://www.npmjs.com/package/startbootstrap-freelancer)
-[![Build Status](https://travis-ci.org/BlackrockDigital/startbootstrap-freelancer.svg?branch=master)](https://travis-ci.org/BlackrockDigital/startbootstrap-freelancer)
-[![dependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-freelancer/status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-freelancer)
-[![devDependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-freelancer/dev-status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-freelancer?type=dev)
+### Imposta le definizioni
 
-## Download and Installation
+Nel file `js/define.js` devi importare le variabili pricipali, a partire dal **nome e cognome**, e tutte le altre cose che vadrai nel file. Alcuni valori sono impostati di default, come lo **slogan**, ma può essere personalizzato.
+Sempre nel file `js/define.js` devi impostare i parametri di **Viva**.
 
-To begin using this template, choose one of the following options to get started:
-* [Download the latest release on Start Bootstrap](https://startbootstrap.com/template-overviews/freelancer/)
-* Install via npm: `npm i startbootstrap-freelancer`
-* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-freelancer.git`
-* [Fork, Clone, or Download on GitHub](https://github.com/BlackrockDigital/startbootstrap-freelancer)
+### Aggiugi i file immagine
 
-## Usage
+Nella cartella `img` devi aggiugere le tue immagini. Mantieni i nomi delle immagini di esempio. Semplicemnte sovrascrivile.
 
-### Basic Usage
+**Attenzione** devono rispettare lo stesso formato e dimenisone:
+* `profile.png`: foto profilo rotonda in .png con sfondo trasparente, dimensione 256x256 px
+* `social_cover.png`: foto che sarà visualizzata sui social quando viene condiviso il sito. Dimensione 1200x630 px Formato .jpeg o .png
+* le altre immagini sono predefinirte per il sito
 
-After downloading, simply edit the HTML and CSS files included with the template in your favorite text editor to make changes. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
+### Aggiugi i file
 
-### Advanced Usage
+Nella cartella `/docs` trovi i file che andranno a popolare la pagina. Puoi usare i tag **html** per definire paragrafi, grassetti e corsivi. Ma ricrtatdati che devono essere testi brevi.
 
-After installation, run `npm install` and then run `gulp dev` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
+Per il file `/docs/my_issues.html` bisogna prestare più attenzione e seguire lo schema dei tag necesseri a creare le animazioni di copri/scopri che carattarizza la sezione **Perchè mi candido**. Almeno fino al un prossimo aggiuramento del sito. 
 
-#### Gulp Tasks
+Per trasformare i file scritti con word o altri editor di testo in semplice Html consigliamo [word2cleanhtml.com](https://word2cleanhtml.com).
 
-- `gulp` the default task that builds everything
-- `gulp dev` browserSync opens the project in your default browser and live reloads when changes are made
-- `gulp sass` compiles SCSS files into CSS
-- `gulp minify-css` minifies the compiled CSS file
-- `gulp minify-js` minifies the themes JS file
-- `gulp copy` copies dependencies from node_modules to the vendor directory
 
 ## Bugs and Issues
 
