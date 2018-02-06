@@ -1,23 +1,6 @@
-# [Candidati Liberi e Uguali 2018 - Web page](http://ufficiodelusi.it)
+# [Start Bootstrap - Freelancer](https://startbootstrap.com/template-overviews/freelancer/)
 
-[Possibile](http://possibile.com) mette a disposizione dei candiati delle elezioni Politiche 2018, una pagina web da usare come sito di rifermito del singolo candidato. 
-Per usarla e installarla non sono necessaire particolari conoscenze informatiche.
-
-## Cosa serve
-
-Prima di iniziare a pensare a come installare il sito web, per il quale puoi sempre chiedere un aiuto a [ufficiotecnico@possibile.com](mailto:ufficiotecnico@possibile.com) procurati queste cose.
-* Foto profilo
-* Foto Cartolina/foto cover per i social
-* Biografica Sintetica (due frasi)
-* Biografica Estesa (lunga quanto vuoi, ma non esagerare!)
-* "Perchè mi candido": scrivi in un breve testo i motivi della tua candidatura e cosa può significare
-* Temi: quali sono i temi programmatici che ti stanno più a cuore e come intenti affrontarli. Non devi scrivere il programma politico cpmpleto, quello c'è già. Limitati ai 3/4 punit che senit più vivnici a te
-
-### Sul Gestionele Viva devi avere:
-
-* un Gruppo a cui far rifereminto per i contatti e per gli eventi dell'agenda
-* una raccolta fondi
-
+[Freelancer](http://startbootstrap.com/template-overviews/freelancer/) is a one page freelancer portfolio theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This theme features several content sections, a responsive portfolio grid with hover effects, full page portfolio item modals, and a working PHP contact form.
 
 ## Preview
 
