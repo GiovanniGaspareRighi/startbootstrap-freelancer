@@ -11,9 +11,9 @@ Prima di iniziare a pensare a come installare il sito web, per il quale puoi sem
 * Biografica Sintetica (due frasi)
 * Biografica Estesa (lunga quanto vuoi, ma non esagerare!)
 * "Perchè mi candido": scrivi in un breve testo i motivi della tua candidatura e cosa può significare
-* Temi: quali sono i temi programmatici che ti stanno più a cuore e come intenti affrontarli. Non devi scrivere il programma politico cpmpleto, quello c'è già. Limitati ai 3/4 punit che senit più vivnici a te
+* Temi: quali sono i temi programmatici che ti stanno più a cuore e come intenti affrontarli. Non devi scrivere il programma politico completo, quello c'è già. Limitati ai 3/4 punti che senti più vivnici a te
 
-### Sul Gestionele Viva devi avere:
+### Sul Gestionele [Viva](https://viva.possibile.com) devi avere:
 
 * un Gruppo a cui far rifereminto per i contatti e per gli eventi dell'agenda
 * una raccolta fondi
@@ -21,11 +21,16 @@ Prima di iniziare a pensare a come installare il sito web, per il quale puoi sem
 
 ## Scarica e installa sul server web
 
-Per usare questo template, semplicemnte scarica i file nella cartella, procedi alla personalizziazione dei paramtri, come spigato nel paragrafo successivo e caca il tutto nella cartella web del tuoi dominio. 
-Se hai bisogno di aiuto a copletare questi passaggi non esitare a contattare [ufficiotecnico@possibile.com](mailto:ufficiotecnico@possibile.com).
-Consiglimo di acquista un dominio su [Tophost](https://www.tophost.it) con il pacchetto [Topname](https://www.tophost.it/home/acquista-dominio-economico/) da 5,99€.
 
-La pagina web non ha bisongo di un databese, di appoggia a Viva per recuperare le informazioni. Mentre i testi andranno modificati solo unatantum la prima volta. 
+Per usare questo template, semplicemnte scarica i file in questo Git
+
+![how-to-download Preview](http://ufficiodelusi.it/img/how-to-download.png)
+
+Procedi alla personalizziazione dei paramtri, come spigato nel paragrafo successivo e carica il tutto nella cartella web del tuo dominio.
+Se hai bisogno di aiuto a copletare questi passaggi non esitare a contattare [ufficiotecnico@possibile.com](mailto:ufficiotecnico@possibile.com).
+Consiglimo di acquistare un dominio su [Tophost](https://www.tophost.it) con il pacchetto [Topname](https://www.tophost.it/home/acquista-dominio-economico/) da 5,99€.
+
+La pagina web non ha bisongo di un databese, si appoggia a **Viva** per recuperare le informazioni. Mentre i testi andranno modificati solo unatantum la prima volta. 
 
 ## Personalizzazione
 
