@@ -1,6 +1,6 @@
 # [Candidati Liberi e Uguali 2018 - Web page](http://ufficiodelusi.it)
 
-[Possibile](http://possibile.com) mette a disposizione dei candiati delle elezioni Politiche 2018, una pagina web da usare come sito di rifermito del singolo candidato. 
+[Possibile](http://possibile.com) mette a disposizione dei candidati delle elezioni Politiche 2018, una pagina web da usare come sito di riferimento del singolo candidato. 
 Per usarla e installarla non sono necessaire particolari conoscenze informatiche.
 
 ## Cosa serve
@@ -8,51 +8,51 @@ Per usarla e installarla non sono necessaire particolari conoscenze informatiche
 Prima di iniziare a pensare a come installare il sito web, per il quale puoi sempre chiedere un aiuto a [ufficiotecnico@possibile.com](mailto:ufficiotecnico@possibile.com) procurati queste cose.
 * Foto profilo
 * Foto Cartolina/foto cover per i social
-* Biografica Sintetica (due frasi)
-* Biografica Estesa (lunga quanto vuoi, ma non esagerare!)
+* Biografia Sintetica (due frasi)
+* Biografia Estesa (lunga quanto vuoi, ma non esagerare!)
 * "Perchè mi candido": scrivi in un breve testo i motivi della tua candidatura e cosa può significare
-* Temi: quali sono i temi programmatici che ti stanno più a cuore e come intenti affrontarli. Non devi scrivere il programma politico completo, quello c'è già. Limitati ai 3/4 punti che senti più vivnici a te
+* Temi: quali sono i temi programmatici che ti stanno più a cuore e come intendi affrontarli. Non devi scrivere il programma politico completo, quello c'è già. Limitati ai 3/4 punti che senti più vicini a te
 
 ### Sul Gestionele [Viva](https://viva.possibile.com) devi avere:
 
-* un Gruppo a cui far rifereminto per i contatti e per gli eventi dell'agenda
+* un Gruppo a cui far riferimento per i contatti e per gli eventi dell'agenda
 * una raccolta fondi
 
 
 ## Scarica e installa sul server web
 
 
-Per usare questo template, semplicemnte scarica i file in questo Git
+Per usare questo template, semplicemente scarica i file in questo Git
 
 ![how-to-download Preview](http://ufficiodelusi.it/img/how-to-download.png)
 
-Procedi alla personalizziazione dei paramtri, come spigato nel paragrafo successivo e carica il tutto nella cartella web del tuo dominio.
-Se hai bisogno di aiuto a copletare questi passaggi non esitare a contattare [ufficiotecnico@possibile.com](mailto:ufficiotecnico@possibile.com).
-Consiglimo di acquistare un dominio su [Tophost](https://www.tophost.it) con il pacchetto [Topname](https://www.tophost.it/home/acquista-dominio-economico/) da 5,99€.
+Procedi alla personalizzazione dei parametri, come spiegato nel paragrafo successivo e carica il tutto nella cartella web del tuo dominio.
+Se hai bisogno di aiuto a completare questi passaggi non esitare a contattare [ufficiotecnico@possibile.com](mailto:ufficiotecnico@possibile.com).
+Consigliamo di acquistare un dominio su [Tophost](https://www.tophost.it) con il pacchetto [Topname](https://www.tophost.it/home/acquista-dominio-economico/) da 5,99€.
 
-La pagina web non ha bisongo di un databese, si appoggia a **Viva** per recuperare le informazioni. Mentre i testi andranno modificati solo unatantum la prima volta. 
+La pagina web non ha bisogno di un Data Base, si appoggia a **Viva** per recuperare le informazioni. Mentre i testi andranno modificati solo unatantum la prima volta. 
 
 ## Personalizzazione
 
 ### Imposta le definizioni
 
-Nel file `js/define.js` devi importare le variabili pricipali, a partire dal **nome e cognome**, e tutte le altre cose che vadrai nel file. Alcuni valori sono impostati di default, come lo **slogan**, ma può essere personalizzato.
+Nel file `js/define.js` devi importare le variabili pricipali, a partire dal **nome e cognome**, e tutte le altre cose che vedrai nel file. Alcuni valori sono impostati di default, come lo **slogan**, ma anche quello può essere personalizzato.
 Sempre nel file `js/define.js` devi impostare i parametri di **Viva**.
 
 ### Aggiugi i file immagine
 
-Nella cartella `img` devi aggiugere le tue immagini. Mantieni i nomi delle immagini di esempio. Semplicemnte sovrascrivile.
+Nella cartella `img` devi aggiugere le tue immagini. Mantieni i nomi delle immagini di esempio. Semplicemente sovrascrivile.
 
 **Attenzione** devono rispettare lo stesso formato e dimenisone:
 * `profile.png`: foto profilo rotonda in .png con sfondo trasparente, dimensione 256x256 px
 * `social_cover.png`: foto che sarà visualizzata sui social quando viene condiviso il sito. Dimensione 1200x630 px Formato .jpeg o .png
-* le altre immagini sono predefinirte per il sito
+* le altre immagini sono predefinite per il sito
 
 ### Aggiugi i file
 
-Nella cartella `/docs` trovi i file che andranno a popolare la pagina. Puoi usare i tag **html** per definire paragrafi, grassetti e corsivi. Ma ricrtatdati che devono essere testi brevi.
+Nella cartella `/docs` trovi i file che andranno a popolare la pagina. Puoi usare i tag **html** per definire paragrafi, grassetti e corsivi. Ma ricordati che devono essere testi brevi.
 
-Per il file `/docs/my_issues.html` bisogna prestare più attenzione e seguire lo schema dei tag necesseri a creare le animazioni di copri/scopri che carattarizza la sezione **Perchè mi candido**. Almeno fino al un prossimo aggiuramento del sito. 
+Per il file `/docs/my_issues.html` bisogna prestare più attenzione e seguire lo schema dei tag necessari a creare le animazioni di copri/scopri che caratterizza la sezione **Perchè mi candido**. Almeno fino al un prossimo aggiornamento del sito. 
 
 Per trasformare i file scritti con word o altri editor di testo in semplice Html consigliamo [word2cleanhtml.com](https://word2cleanhtml.com).
 
