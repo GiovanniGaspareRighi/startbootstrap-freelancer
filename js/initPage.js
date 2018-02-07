@@ -11,35 +11,11 @@ function initPage() {
     show_issues(issues_url);
     show_social();
     
-    var numevents = markers.length;
-    $("#count").prepend(numevents);
-    
-    if (numevents !== 0){
-      var location_markers = show_calendar();
-  }else{
-      $("#calendar").remove();
-      $("#agenda-menu").remove();
-  }
-      
-    new Maplace({
-        generate_controls : false,
-        locations: location_markers,
-        map_div: '#map',
-        controls_on_map: false
-    }).Load();
+    load_happening(group_id);
     
     load_captcha();
     load_privacy();
-    
-//    //recupero il captcha
-//    $.post("../backend/get_captcha.php",
-//	{},
-//        function(data,status){
-//            //$("#info").append("Data: " + JSON.stringify(data.data.img, null, 4) + "\nStatus: " + status);
-//            //data = JSON.parse(data);
-//            $("#captcha_img").html("<img id=\"waForm_captcha_img_captcha\"  src=" + data.data.img + ">");
-//            $("#captcha_hidden_val").html("<input id=\"captcha_id\" type=\"hidden\" name=\"k_captcha\" value="+ data.data.id + ">");
-//        });	
+	
 };	
 
 function show_issues(issues_url){
@@ -122,24 +98,25 @@ function show_social() {
 }
 
 // carica la tabella degli eventi
-function show_calendar(){
+function show_calendar(markers){
     var x;
     var location_markers = [];
     
     for (x in markers){
         var row_html = "";
-        row_html += "<tr><td><div class='calendar-day'>11</div><div class='calendar-month'>FEB</div></td>";
-        row_html += "<td><a href='#' target='_blank' class='calendar-event-name'>"+ markers[x].name +"</a>";
-        row_html += "<div class='calendar-event-city'>"+ markers[x].venue_name + " - " + markers[x].city +"</div></td></tr>";
+        var happening_href = viva_url+"backoffice/user_frm_happening.php?id="+markers[x].id; 
+        row_html += "<tr><td><div class='calendar-day'>"+ markers[x].from_day +"</div><div class='calendar-month'>"+month_ita[markers[x].from_month - 1] + "</div></td>";
+        row_html += "<td><a href='" + happening_href + "' target='_blank' class='calendar-event-name'>"+ markers[x].name +"</a>";
+        row_html += "<div class='calendar-event-city'>"+ markers[x].happening_venue_name + " - " + markers[x].happening_city_name +"</div></td></tr>";
         $("#myTable").append(row_html);
         var new_location = {
-            lat: markers[x].lat,
-            lon: markers[x].lng,
+            lat: markers[x].latitude,
+            lon: markers[x].longitude,
             title: markers[x].name,
             html: [
                 "<a href='",viva_url+"backoffice/user_frm_happening.php?id="+markers[x].id,"' target='_blank' >",
                 '<h3>'+markers[x].name+'</h3>',
-                '<p>'+markers[x].venue_name+'</p></a>'
+                '<p>'+markers[x].happening_venue_name+'</p></a>'
                 ].join('')
         };
         location_markers.push(new_location);
@@ -162,3 +139,32 @@ function show_calendar(){
     
     return location_markers;
 }
+
+
+function load_happening(group_id){
+    $.post(viva_url+"backend/get_public_happening.php?id_group="+group_id,
+    {},
+    function(data,status){
+        
+        var markers = data.data.items;
+        var numevents = markers.length;
+        $("#count").prepend(numevents);
+    
+        if (numevents !== 0) {
+             var location_markers = show_calendar(markers);
+             new Maplace(
+                    {
+                        generate_controls : false,
+                        locations: location_markers,
+                        map_div: '#map',
+                        controls_on_map: false
+                    }).Load();
+        } 
+        else {
+            $("#calendar").remove();
+            $("#agenda-menu").remove();
+        }
+      
+    });	
+}
+
