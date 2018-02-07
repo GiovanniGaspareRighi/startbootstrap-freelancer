@@ -15,22 +15,33 @@ and open the template in the editor.
     font-size: 25px;
     width: 70%;
     text-align: right;
-    margin-top: 20px;
+    margin-top: 10px;
     }
-    
+   
+    header.masthead{
+        margin-top:60px 1important;
+    }    
 header.masthead
  .social-info {
     display: none;
 }
-    
+ 
+#mainNav{
+    padding:0 25px !important;
+}
+.fixed-top{
+    height:60px;
+}
+
 a.navbar-brand {
     width: 100%;
     margin:0 !important;
 }
 
 a.navbar-brand img {
-    width: 30%;
+    width: 25%;
     margin: 0 auto -30px;
+    padding:0 !important;
 }
 .navbar .container{
     padding:0 !important;
