@@ -11,8 +11,16 @@ function initPage() {
     show_issues(issues_url);
     show_social();
     
-    var location_markers = show_calendar();
+    var numevents = markers.length;
+    $("#count").prepend(numevents);
     
+    if (numevents !== 0){
+      var location_markers = show_calendar();
+  }else{
+      $("#calendar").remove();
+      $("#agenda-menu").remove();
+  }
+      
     new Maplace({
         generate_controls : false,
         locations: location_markers,

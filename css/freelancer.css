@@ -223,7 +223,7 @@ section#calendar {
     z-index: 999;
 }
 
-span#total_reg {
+span#count {
     font-family: Lato;
     font-size: 15px;
     font-style: italic;
