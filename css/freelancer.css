@@ -4,7 +4,7 @@
 .mob-only{display:none;}
 
 a{transition:.3s;}
-
+.btn{white-space: normal !important;}
 .donation-link{
     text-transform:uppercase;
     font-weight:800;

@@ -8,6 +8,24 @@ and open the template in the editor.
     Author     : dario.valeri
 */
 
+@media screen and (max-width: 340px){
+  a.navbar-brand {
+    width: 85% !important;
+    margin:0 !important;
+  }  
+   h1.nome_candidato {
+    font-size: 20px !important;
+   }
+   .nav-link{line-height:0.5 !important;}
+   .box-agenda{padding: 50px 20px !important;}
+   .page-box{
+       margin-top: 50px !important;
+       position: relative !important;
+       width: 100% !important;
+   }
+   .scroll-to-top{display:none !important;}
+}
+
 
 @media screen and (max-width: 600px){
     
@@ -17,8 +35,9 @@ and open the template in the editor.
     display: inline-block;
     font-size: 25px;
     width: 70%;
-    text-align: right;
+    text-align: left;
     margin-top: 10px;
+    white-space: initial !important;
     }
    
     header.masthead{
