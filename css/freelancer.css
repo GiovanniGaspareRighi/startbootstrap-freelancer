@@ -1,6 +1,7 @@
 .txt-left{
     text-align:left;
 }
+.mob-only{display:none;}
 
 a{transition:.3s;}
 
@@ -8,6 +9,7 @@ a{transition:.3s;}
     text-transform:uppercase;
     font-weight:800;
     letter-spacing:4px;
+    margin-top:12px;
 }
 
 nav .donation-link{
@@ -108,7 +110,7 @@ header .box-profile {
     margin-right: 20px;
 }
 
-.social-info {margin-bottom: 10px;display: inline-block;}
+.social-info {margin-bottom: 10px;}
 
 h3#ruolo {
     display: block;
@@ -216,7 +218,7 @@ section#calendar {
 section#calendar:before {
     content: "";
     display: block;
-    width: 50%;
+    width: 37%;
     height: 100%;
     background: linear-gradient(to right,#1cbea8 60%,#a3ccff00 100%);
     background: -webkit-linear-gradient(to right,#1cbea8 60%,#a3ccff00 100%);
@@ -360,7 +362,7 @@ span.cta {
 }
 img.scheda {
     max-width: 100%;
-    margin-top: -173px;
+    margin-top: -110px;
 }
 .link-scheda h3{
     color:white;

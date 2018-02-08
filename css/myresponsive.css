@@ -10,6 +10,9 @@ and open the template in the editor.
 
 
 @media screen and (max-width: 600px){
+    
+    .mob-only{display:block;}
+    
     h1.nome_candidato {
     display: inline-block;
     font-size: 25px;
@@ -19,13 +22,15 @@ and open the template in the editor.
     }
    
     header.masthead{
-        margin-top:60px 1important;
+        margin-top:60px !important;
     }    
-header.masthead
- .social-info {
+header.masthead .social-info {
     display: none;
 }
- 
+
+.mob-only.social-info{
+    padding:30px 0;
+}
 #mainNav{
     padding:0 25px !important;
 }
@@ -34,7 +39,7 @@ header.masthead
 }
 
 a.navbar-brand {
-    width: 100%;
+    width: 87%;
     margin:0 !important;
 }
 
@@ -44,7 +49,13 @@ a.navbar-brand img {
     padding:0 !important;
 }
 .navbar .container{
-    padding:0 !important;
+    top: 0;
+    position: absolute;
+    background: white;
+    width: 100%;
+    left: 0;
+    padding:0px 20px !important;
+    text-align:center;
 }
 
 h2#slogan {
@@ -116,6 +127,9 @@ div#map {
     position: relative;
     left: 0;
     min-height: 480px;
+}
+#count{
+    display:block;
 }
 
 footer {
