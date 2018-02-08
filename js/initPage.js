@@ -2,13 +2,14 @@
 
 function initPage() {
     $(".nome_candidato").text(candidato_nome);
-    $("#ruolo").text(ruolo);
+    $(".ruolo").text(ruolo);
     $("#slogan").text(slogan);
     $("#motivazioni").attr('w3-include-html',why_url);
     $("#bio_short").attr('w3-include-html',bio_short_url);
     $("#bio_long_text").attr('w3-include-html',bio_long_url);
     $(".box-profile").css('background-image','url("' + candidato_img_url + '")');
-    show_issues(issues_url);
+    $(".donation-link").attr('href',donation_url);
+	show_issues(issues_url);
     show_social();
     
     load_happening(group_id);
